@@ -2,7 +2,24 @@
 <html>
 <head>
 </head>
+<pre>
 
+// The code that's in this page - check the console for results
+
+void function(){
+
+    var to_load = {
+        'person': 'images/person.png',
+        'ninja': 'images/ninja.png'
+    }
+    
+    load_images(to_load, function(images){
+        console.log(images)
+    })
+
+
+}()
+</pre>
 <body>
 
 <script src="src/load_images.js"></script>
@@ -15,7 +32,7 @@ void function(){
     }
     
     load_images(to_load, function(images){
-        console.log(images, 'hi')
+        console.log(images)
     })
 
 
