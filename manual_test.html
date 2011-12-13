@@ -1,0 +1,25 @@
+<!DOCTYPE>
+<html>
+<head>
+</head>
+
+<body>
+
+<script src="src/load_images.js"></script>
+<script>
+void function(){
+
+    var to_load = {
+        'person': 'images/person.png',
+        'ninja': 'images/ninja.png'
+    }
+    
+    load_images(to_load, function(images){
+        console.log(images, 'hi')
+    })
+
+
+}()
+</script>
+</body>
+</html>
