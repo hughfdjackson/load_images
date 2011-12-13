@@ -16,8 +16,8 @@ describe("load_images", function(){
         }, "images to load", 5000)
         
         runs(function(){
-            expect(images.person instanceof Image).toBeTruthy()
-            expect(images.ninja instanceof Image).toBeTruthy()
+            expect(images.person.tagName.toLowerCase).equal('img')
+            expect(images.ninja.tagName.toLowerCase).equal('img')
         })
         
     })

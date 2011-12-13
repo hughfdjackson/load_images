@@ -8,7 +8,7 @@ function load_images(image_object, callback){
     }
 
     function load(key, val){
-        var image = new Image();
+        var image = new Image()
         to_load += 1
         image.src = val
         image.onload = on_load
