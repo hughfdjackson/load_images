@@ -16,8 +16,8 @@ describe("load_images", function(){
         }, "images to load", 5000)
         
         runs(function(){
-            expect(images.person.tagName.toLowerCase()).toEqual('img')
-            expect(images.ninja.tagName.toLowerCase()).toEqual('img')
+            expect(images.person.complete).toEqual(true)
+            expect(images.ninja.complete).toEqual(true)
         })
         
     })
