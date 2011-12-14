@@ -1,7 +1,10 @@
 function load_images(image_object, callback){
-    var images = {},
-        to_load = 0
+    var to_load = 0,
+        images
 
+    if ( image_object instanceof Array ) images = []
+    else images = {}
+    
     function on_load(){
         to_load -= 1
         if ( to_load == 0 && callback ) callback(images)

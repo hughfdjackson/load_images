@@ -29,4 +29,4 @@ The callback is called as soon as all images are loaded, and the above callback 
 
 ## Tests
 
-[Feel free to run the (one) unit test](http://hughfdjackson.github.com/load_images/src-test/SpecRunner.html)
+[Feel free to run the unit tests](http://hughfdjackson.github.com/load_images/src-test/SpecRunner.html)
