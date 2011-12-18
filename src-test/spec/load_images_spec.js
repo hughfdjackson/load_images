@@ -5,14 +5,16 @@ describe("load_images", function(){
                 'person': '../images/person.png', 
                 'ninja': '../images/ninja.png'
             },
-            images = {}
+            images = {},
+            flag = false
 
         load_images(to_load, function(i){
             images = i
+            flag = true
         })
-
+    
         waitsFor(function(){
-            return images.person && images.ninja            
+            return flag           
         }, "images to load", 5000)
         
         runs(function(){
