@@ -10,12 +10,12 @@ function load_images(image_object, callback){
         if ( to_load == 0 && callback ) callback(images)
     }
     
-    function load(key, val){
+    function load(name, url){
         var image = new Image()
         to_load += 1
-        image.src = val
+        image.src = url
         image.onload = on_load
-        images[key] = image
+        images[name] = image
     }
 
     for ( var prop in image_object ){
