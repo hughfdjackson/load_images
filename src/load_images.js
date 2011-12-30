@@ -10,10 +10,6 @@ function load_images(image_object, callback){
         if ( to_load == 0 && callback ) callback(images)
     }
     
-    function on_error(){
-    
-    }
-
     function load(key, val){
         var image = new Image()
         to_load += 1
