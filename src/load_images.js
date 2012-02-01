@@ -26,3 +26,5 @@ function load_images(image_object, callback){
     }
 
 }
+
+module.exports = load_images
