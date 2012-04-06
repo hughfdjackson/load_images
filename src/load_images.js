@@ -7,7 +7,7 @@ void function(root){
             images
 
         // logic
-        if ( image_object instanceof Array ) images = []
+        if ( Object.prototype.toString.call(image_object) == '[object Array]' ) images = []
         else images = {}
         
         for ( var prop in image_object ){
@@ -23,7 +23,7 @@ void function(root){
         function load(name, url){
             var image = new Image()
             to_load += 1
-            image.src = url
+            image.src    = url
             image.onload = on_load
             images[name] = image
         }
@@ -34,5 +34,6 @@ void function(root){
         module.exports = load_images
     else
         root.load_images = load_images
-        
+
+
 }(this)
